@@ -1,0 +1,39 @@
+DOM EVENTS WITH JAVASCRIPT
+Adding Event Handlers
+We looked at registering event handlers using the .addEventListener() method, but there is also another way!
+
+Event Handlers can also be registered by setting an .onevent property on a DOM element (event target). The pattern for registering a specific event is to append an element with .on followed by the lowercased event type name. For instance, if we want to register a click event with this pattern, we would write:
+
+eventTarget.onclick = eventHandlerFunction;
+
+Here, we give the DOM element eventTarget the .onclick property and set its value as the event handler function eventHandlerFunction.
+
+It’s important to know that this .onevent property and .addEventListener() will both register event listeners. With .onevent, it allows for one event handler function to be attached to the event target. However, with the .addEventListener() method , we can add multiple event handler functions. In the later exercises, we’ll be using the .addEventListener() syntax, but we wanted to also introduce the .onevent syntax because both are widely used.
+
+
+Instructions
+1.
+Play around with the view and close elements to meet the Codecademy mascot, Codey. Codey is super happy you made it this far and they need your help!
+
+Right now, the open() function makes the codey and close elements visible by changing their .display properties to 'block'. The hide() function hides the same elements by assigning a 'none' value to the .display properties.
+
+Codey wants you to create a function named textChange() that changes the text in the view element to 'Hello, World!'.
+
+Checkpoint 2 Passed
+
+
+
+2.
+Next, you must create a function named textReturn() that changes the text of the view element variable back to 'View'.
+
+Checkpoint 3 Passed
+
+
+3.
+Assign textChange as an event handler function to a click event fired on the view variable and run your code.
+
+Checkpoint 4 Passed
+
+
+4.
+Assign textReturn as an event handler function to a click event fired on the close variable. Then run your code and fire the events!
